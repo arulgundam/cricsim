@@ -1,22 +1,11 @@
 <template>
-  <main class="home">
-    <header class="toolbar">
-      <div>
-        CricSim
-      </div>
-      <div>
-        <router-link to="/">Home</router-link> |
-        <router-link to="/squad">Squad Data</router-link>
-      </div>
-    </header>
-    <div class="body">
+    <div class="home">
       <img id="stadiumimg" src="/images/tare.jpg">
       Simulate T20 games by choosing your favorite players!
       <router-link to="/settings" custom v-slot="{navigate}">
         <button @click="navigate">Start Game</button>
       </router-link>
     </div>
-  </main>
 </template>
 
 <script>
@@ -48,7 +37,7 @@ export default {
   width: 66%;
 }
 
-.body {
+.home {
   height: calc(100% - 100px);
   display: flex;
   flex-direction: column;
